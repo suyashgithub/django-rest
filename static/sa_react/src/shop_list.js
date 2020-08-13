@@ -9,6 +9,7 @@ class ShopList extends React.Component {
     this.state = {result :null};
     this.list_data()
   }
+
   componentDidUpdate(prevProps) {
       if (prevProps.is_new_shop !== this.props.is_new_shop) {
             this.list_data();
